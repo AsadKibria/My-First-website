@@ -1,0 +1,458 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+	text-decoration: none;
+	box-sizing: border-box;
+
+}
+
+
+.web_width{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.section_padding{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+	font-family: sans-serif;
+}
+nav{
+	background: #253b46;
+	height: 80px;
+	width: 100%;
+}
+a.logo{
+	color:#ffbf00;
+	font-size: 25px;
+	line-height: 80px;
+	padding: 0 50px;
+	font-weight: 900;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+	background: #253b46;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+	background: #253b46;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+ li a.active,li a:hover{
+	background: #ffbf00;
+}
+
+
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float:right;
+	line-height:80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+@media (max-width: 901px){
+	a.logo{
+		font-size: 20px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 15px;
+	}
+	
+}
+
+
+
+@media (max-width: 810px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		top: 80px;
+		text-align: center;
+		
+		left: -100%;
+		transition: all 0.5s;
+	}
+	
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	
+	nav ul li a{
+		font-size: 20px;
+	}
+	
+	a:hover,a.active{
+		background: none;
+		color: white;
+	}
+	#check:checked ~ ul{
+		left: 0;
+		z-index: 9999;
+	}
+}
+
+
+/*Banner Css Start*/
+#homepage_slider{
+
+}
+/*Banner Css End*/
+
+
+/*About Css Start*/
+#about_us{}
+.about_us_controlar{}
+.about_section_title{
+	font-size: 44px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	margin-bottom: 0px;
+	color: #f0b11c;
+	margin-top: -61px;
+	padding-top: 90px;
+	padding-bottom: 19px;
+}
+.about_us_inner{}
+.about_us_left{
+	max-width: 400px;
+	float: left;
+	margin-right: 30px;
+}
+.about_us_left img{
+	width: 100%;
+}
+.about_us_right{
+	max-width: 100%;
+}
+.about_us_right p{
+	font-size: 20px;
+	line-height: 30px;
+	font-family: 'Open Sans', sans-serif;
+	color: #879eb0;
+}
+.about_us_button{
+	padding: 8px 36px;
+	background: #879eab;
+	color: #253b46;
+	border: 2px solid #879eab;
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	transition: 0.4s;
+	margin-top: 30px;
+}
+
+
+.about_us_button:hover{
+    background: #f0b11c;
+    color: #253b46;
+	border: 2px solid #879eab;
+}
+
+
+
+
+
+
+
+
+/*Team Section Css Start*/
+
+#team_Section{}
+.team_controller{}
+.about_section_title{
+
+}
+.all_teams_member{
+	display: flex;
+	width:auto;
+	text-align: center;
+	/* margin-top: 60px; */
+	margin: 2em;
+	flex-wrap: wrap;
+}
+.team{
+	margin: 5px auto;
+	margin-bottom: 50px;
+	width: 300px;
+	padding: 20px;
+	position: relative;
+	background: teal;
+	cursor: pointer;
+	padding: 44px;
+	transition: 0.5s;
+}
+.team_image{}
+.team_image img{
+	height: 110px;
+	width: 110px;
+	border-radius: 20%;
+	position: absolute;
+	margin-left: -61px;
+	margin-top: -84px;
+	background: teal;
+	
+}
+.team h3{
+	margin-top: 50px;
+	font-size: 20px;
+	background: teal;
+}
+.team p.role{
+	margin: 12px 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	
+}
+.team p{
+	font-size: 16px;
+	background: teal;
+	color: #dae9f0;
+}
+
+.team:hover{
+	background: #008080cf
+}
+.team_image img:hover{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 20px;
+	
+}
+.{}
+.{}
+/*Team Section Css End*/
+
+
+
+
+
+
+/* Contact Section Css Start */
+#content_us{
+	background: linear-gradient(rgba(14, 80, 61, 0.95), rgba(29, 46, 55, 0.95)),url(img/slider0.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 650px;
+	width: 100%;
+	
+}
+
+.content_section_title{
+	font-size: 44px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	color:#f7f5f1;
+	margin-bottom: 50px;
+
+}
+.content_form{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.sosial_area{}
+.sosial_area i.fa{
+    color: #14a7ae;
+    font-size: 20px;
+    padding: 25px;
+    cursor: pointer;
+
+}
+
+.sosial_area i.fa:hover{
+  color: #1577ce;
+
+}
+	
+	
+
+.sosial_area span{
+	color: #14a7ae;
+	padding: 10px;
+	font-size: 18px;
+}
+.sosial_area span:hover{
+	 color: #1577ce;
+}
+
+.content_form_area{}
+.content_form_area form{}
+.content_form_area input, textarea {
+   background: #0e86864f;
+	padding: 13px;
+	margin: 6px;
+	width: 295px;
+	border-radius: 9px;
+	border: 2px solid #14a7ae;
+	transition: 0.6s;
+	color: #0cf3ff;
+}
+.content_form_area button{
+	background: #14a7a9;
+	border: #14a7a9;
+	width: 295px;
+	border-radius: 12px;
+	position: absolute;
+	right: 222px;
+	height: 36px;
+	cursor: pointer;
+	transition: 0.6s;
+}
+.content_form_area button:hover{
+	color: white;
+	background: #1577ce;
+}
+
+
+.content_form_area textarea:hover {
+	color: white;
+	background: none;
+}
+
+.content_form_area input:hover {
+	color: white;
+	background: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 901px){
+
+
+.content_form_area button {
+
+	width: 295px;}
+	
+}
+
+
+
+@media (max-width: 810px){
+
+.content_form_area {
+    margin-top: 24px;
+    background: linear-gradient(rgba(14, 80, 61, 0.95), rgba(29, 46, 55, 0.95)),url(img/slider0.jpg);
+    width: 100%;
+    height: 450px;
+    padding: 16px 33px;
+}
+
+.content_form_area button{
+	position: absolute;
+	right:  94px;
+
+}
+
+
+.content_form_area button {
+
+		width: 164px;}
+}
+
+
+
+/* Contact Section Css End */
+
+
+
+
+
+
+/*Scroll to top Css Start*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+/*Scroll to top Css End*/
+
+
